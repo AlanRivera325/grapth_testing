@@ -1,0 +1,23 @@
+type Employee {
+    id_employee: Int
+    first_name: String
+    last_name: String
+    email: String
+    naotionality: String
+    phone: String
+    cs: Int
+    birthday: String
+}
+
+type User {
+    username: String
+    password: String
+    is_admin: Int
+}
+
+type Query {
+    getEmployees: [Employee]
+    getEmployeebyId(id_employee: Int!): Employee
+    getUserCred(username: String!): User
+    
+}
